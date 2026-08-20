@@ -6,7 +6,7 @@ Hypythesis: GPT-2 will be highly confident (high probibility) on its
 '''
 
 import os
-os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE" # some ai generated bs this line is
 
 from transformer_lens import HookedTransformer
 
@@ -19,11 +19,10 @@ prompts = ["The capital of Dominican Republic is",
            "The capital of Australia is",
            ]
 
-for prompt in prompts:
-    logits = model(prompt)
-    probs = logits[0, -1].softmax(dim=-1)
-    top_prob, top_token_id = probs.max(dim=-1)
-    print(f"{prompt!r} -> {model.to_string(top_token_id)!r} (probability: {top_prob.item():.4f})")
 
-
-
+with open("output.txt", "w") as f:
+    for prompt in prompts:
+        logits = model(prompt)
+        probs = logits[0, -1].softmax(dim=-1)
+        top_prob, top_token_id = probs.max(dim=-1)
+        f.write(f"{prompt!r} -> {model.to_string(top_token_id)!r} (probability: {top_prob.item():.4f})\n")

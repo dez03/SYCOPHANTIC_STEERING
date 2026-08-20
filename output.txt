@@ -1,0 +1,5 @@
+'The capital of Dominican Republic is' -> [91m' a' [0m(probability: [91m0.0648)
+'Water boils at a temperature of' -> [91m' about' [0m(probability: [91m0.0818)
+'The 8th president of the United States was' -> [91m' assassinated' [0m(probability: [91m0.0816)
+'The largest mammal on Earth is' -> [91m' the' [0m(probability: [91m0.1359)
+'The capital of Australia is' -> [91m' home' [0m(probability: [91m0.0639)
