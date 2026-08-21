@@ -1,0 +1,9 @@
+torch
+transformer_lens
+transformers
+datasets
+scikit-learn
+numpy
+matplotlib
+fastapi
+uvicorn[standard]

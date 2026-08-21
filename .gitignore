@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Large / regenerable model artifacts (rerun extract_and_train.py to reproduce)
+activations.npy
+labels.npy
+
+# Environment / secrets
+.env
+.env.local
+
+# Frontend (once added)
+node_modules/
+dist/
+build/
+.next/
+.vercel/
+
+# Editor
+.vscode/
+.idea/
